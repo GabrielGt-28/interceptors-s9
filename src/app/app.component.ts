@@ -13,7 +13,6 @@ export class AppComponent {
 
   constructor(private peopleListService: PeopleListService) {
     this.peopleListService.getPeopleList().subscribe((resp: any) => {
-      console.log(resp);
       this.peoples = resp;
     });
   }
