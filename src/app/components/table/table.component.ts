@@ -13,8 +13,4 @@ interface People {
 })
 export class TableComponent {
   @Input() peoplesChildren?: Array<People> = [];
-
-  show() {
-    console.log(this.peoplesChildren);
-  }
 }
